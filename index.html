@@ -1,105 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Normalize -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j=bmwXdxFgVK/Kvc=" crossorigin="anonymous">
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-  <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ea40a0250c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main/css/main.css">
+
+    <title>Asher's Portfolio</title>
 </head>
 
-<body>
-  <header>
-    <div class="logo">
-      <img src="" alt="site logo, my initials A.P.">
-    </div>
-    <button class="nav-toggle" aria-label="toggle navigation">
-      <span class="hamburger"></span>
-    </button>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
-      </ul>
-    </nav>
-  </header>
+<body id="bg-image">
+    <header>
+        <nav>
+            <div class="nav-wrapper grey">
+                <div class="container">
+                    <a href="#!" class="brand-logo">Asher's Portfolio</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-links"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="main/about.html">About Me</a></li>
+                        <li><a href="main/projects.html">Projects</a></li>
+                        <li><a href="main/contact.html">Contact form</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-  <!-- Introduction -->
-  <section class="intro" id="home">
-    <h1 class="section__title section__title--intro">
-      Hello, I am <strong>Asher Pappas</strong>
-    </h1>
-    <p class="section__subtitle section__subtitl--intro">Full Stack Dev Student</p>
-    <img src="" alt="Picture of me">
-  </section>
 
-  <!-- My services -->
-  <section class="my-services" id="services">
-    <h2 class="section__title section__title--services">What I do</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Front End</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dicta quibusdam voluptas dolores consequatur
-          atque, ipsam, est sed nesciunt dolorum nihil eveniet, qui vitae. Explicabo repellat accusamus asperiores
-          voluptates esse.</p>
 
-      </div> <!-- / service -->
-      <div class="service">
-        <h3>Back End</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dicta quibusdam voluptas dolores consequatur
-          atque, ipsam, est sed nesciunt dolorum nihil eveniet, qui vitae. Explicabo repellat accusamus asperiores
-          voluptates esse.</p>
 
-      </div> <!-- / service -->
-      <div class="service">
-        <h3>Other</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dicta quibusdam voluptas dolores consequatur
-          atque, ipsam, est sed nesciunt dolorum nihil eveniet, qui vitae. Explicabo repellat accusamus asperiores
-          voluptates esse.</p>
+        <ul class="sidenav" id="mobile-links">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="main/about.html">About Me</a></li>
+            <li><a href="main/projects.html">Projects</a></li>
+            <li><a href="main/contact.html">Contact form</a></li>
+            <li><a class="sidenav-close blue-grey lighten-4 center" href="#!">X</a></li>
 
-      </div> <!-- / service -->
-    </div> <!-- / services-->
-    <a href="#work" class="btn">My Work</a>
-  </section>
+        </ul>
+    </header>
 
-  <!--About Me-->
-  <section class="about-me" id="about">
-    <h2 class="section__title section__title--about">Who I am</h2>
-    <p class="section__subtitle section__subtitle--about">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
-      dicta quibusdam voluptas dolores consequatur
-      atque, ipsam, est sed nesciunt dolorum nihil eveniet, qui vitae. Explicabo repellat accusamus asperiores
-      voluptates esse.</p>
-  <div class="about-me__body">
-    <p></p>
-    <p></p>
-  </div>
-  <img src="" alt="tbd">
-    </section>
+    <main id="home">
+        <h1 class="lg-heading">Asher <span class="text-secondary">Pappas</span></h1>
+        <h2 class="sm-heading">Web Developer & Programmer</h2>
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/kacey-churchill-027ba690/"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/K4c3y"><i class="fab fa-github fa-2x"></i></a>
+        </div>
+    </main>
 
-<!-- My Work-->
-<section class="my-work" id="work">
-  <h2 class="section__title">My Work</h2>
-  <p class="section__subtitle"></p>
-
-  <div class="portfolio">
-    <a href="#" class="portfolio__item">
-      <img src="" alt="tbd">
-    </a>
-  
-  </div>
-
-</section>
-
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.sidenav').sidenav();
+        });
+    </script>
 </body>
 
 </html>
