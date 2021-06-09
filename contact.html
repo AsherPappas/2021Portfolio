@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asher Pappas Contact Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css" class="style">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+</head>
+
+<body class="bg">
+    <section class="section has-text-white">
+        <div class="container has-text-white">
+            <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand ml-6">
+                    <a class="navbar-item" href="index.html">
+                        <img src="assets/smPlaceHolder.jpg" width="40" height="50" alt="logo">
+                    </a>
+
+                    <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div class="navbar-start ml-3 pt-2 is-size-3">
+                    <h1>Asher Pappas</h1>
+                </div>
+                <div id="menu" class="navbar-menu">
+                    <div class="navbar-end mr-6">
+                        <a class="navbar-item has-text-white is-size-4" href="index.html">
+                            About
+                        </a>
+
+                        <a class="navbar-item  has-text-white is-size-4" href="portfolio.html">
+                            Portfolio
+                        </a>
+
+                        <a class="navbar-item has-text-white is-size-4" href="contact.html">
+                            Contact
+                        </a>
+                        <a class="navbar-item has-text-white is-size-4" href="assets/APappasResume.pdf" download>
+                            Resume
+                        </a>
+
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+    </section>
+    <main>
+        <div class="columns">
+            <div class="column is-3">
+
+            </div>
+            <div class="column mt-6 is-6">
+                <div class="content has-text-white is-size-3 mb-6">
+                    Asher Pappas&nbsp;&nbsp; |&nbsp;&nbsp; 801-834-3487 &nbsp;&nbsp; |&nbsp;&nbsp; asherpappas@gmail.com
+                </div>
+                <!-- <form id="my-form" action="https://formspree.io/f/xrgoddyl" method="POST"> -->
+                    <div class="field mb-6">
+
+                        <label class="label   has-text-white is-size-3">Name</label>
+                        <div class="control">
+                            <input class="input contact" type="text" placeholder="Your Name">
+                        </div>
+                    </div>
+
+                    <div class="field mb-6">
+                        <label class="label has-text-white is-size-3">Email</label>
+                        <div class="control">
+                            <input class="input email" type="email" name="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <label class="label has-text-white comment is-size-3">Message</label>
+                    <textarea class="textarea mb-6 message" name="message" placeholder="Your Message"></textarea>
+                    <div class="has-text-justified">
+
+                        <button class="button is-dark is-large is-size-3 is-fullwidth"
+                            id="button">Submit</button>
+                    </div>
+                    <div id="status" class="has-text-white">
+                        <p  class="has-text-white mt-6"></p>
+                    </div>
+                <!-- </form> -->
+            </div>
+        </div>
+
+        <div class="column is-3">
+
+        </div>
+
+    </main>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

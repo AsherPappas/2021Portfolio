@@ -1,65 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/ea40a0250c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main/css/main.css">
-
-    <title>Asher's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Asher Pappas Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css" class="style">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
-<body id="bg-image">
-    <header>
-        <nav>
-            <div class="nav-wrapper grey">
-                <div class="container">
-                    <a href="#!" class="brand-logo">Asher's Portfolio</a>
-                    <a href="#" class="sidenav-trigger" data-target="mobile-links"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="main/about.html">About Me</a></li>
-                        <li><a href="main/projects.html">Projects</a></li>
-                        <li><a href="main/contact.html">Contact form</a></li>
-                    </ul>
+<body class="bg">
+    <section class="section">
+        <div class="container has-text-white">
+            <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand ml-6">
+                    <a class="navbar-item" href="index.html">
+                        <img src="assets/smPlaceHolder.jpg" width="40" height="50" alt="logo">
+                    </a>
+
+                    <a id="burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
-            </div>
-        </nav>
+                <div class="navbar-start ml-3 pt-2 is-size-3">
+                    <h1>Asher Pappas</h1>
+                </div>
 
+                <div id="menu" class="navbar-menu">
+                    <div class="navbar-end mr-6">
+                        <a class="navbar-item has-text-white is-size-4 navbar-item-hover-color href=" index.html">
+                            About
+                        </a>
 
+                        <a class="navbar-item  has-text-white is-size-4" href="portfolio.html">
+                            Portfolio
+                        </a>
 
+                        <a class="navbar-item has-text-white is-size-4" href="contact.html">
+                            Contact
+                        </a>
+                        <a class="navbar-item has-text-white is-size-4" href="assets/APappasResume.pdf" target="_blank">
+                            Resume
+                        </a>
+                        <a class="navbar-item is-hidden-touch" href="#where-section"></a>
+                    </div>
+                </div>
 
-        <ul class="sidenav" id="mobile-links">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="main/about.html">About Me</a></li>
-            <li><a href="main/projects.html">Projects</a></li>
-            <li><a href="main/contact.html">Contact form</a></li>
-            <li><a class="sidenav-close blue-grey lighten-4 center" href="#!">X</a></li>
-
-        </ul>
-    </header>
-
-    <main id="home">
-        <h1 class="lg-heading">Asher <span class="text-secondary">Pappas</span></h1>
-        <h2 class="sm-heading">Web Developer & Programmer</h2>
-        <div class="icons">
-            <a href="https://www.linkedin.com/in/kacey-churchill-027ba690/"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/K4c3y"><i class="fab fa-github fa-2x"></i></a>
+            </nav>
         </div>
-    </main>
 
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.sidenav').sidenav();
-        });
-    </script>
+    </section>
+    <section class="hero has-text-white">
+        <div class="hero-body">
+            <p class="title has-text-white m-3">
+                About Me
+            </p>
+            <img src="assets/profile.jpg" alt="Photo of Asher Pappas" class="profilePic mx-6">
+            <p class="ml-3 mb-6 is-size-4 has-text-justified">
+                I am a student through the University of Utah's Full Stack Web Development course. My career thus far
+                has been in customer service as I love to help others. I chose this new career path to find new ways to
+                help others such as creating a platform for my friends to promote their businesses, or to make a website
+                for
+                my family to plan the annual reunion since a lot of the older generation doesn't use Facebook.
+                Ultimately I'd
+                love to be on a development team for a company that changes the world for the better environmentally,
+                socially, and politcally. </p>
+            <p class="ml-3 mb-6 is-size-4 has-text-justified">In this program we learn: HTML / CSS3, JavaScript / JQuery
+                / Node.js, PHP, Express.js / React.js / Bookshelf.js, Database Theory, MongoDB, MySQL, Command Line, and
+                Git/GitHub. I am dedicated to continue my education as a Full Stack Developer; beyond this course I will
+                be pursuing
+                certifications in Python, Ruby, C#, and C++. Additionally, I want to become proficient in UI/UX and
+                Graphic Design.</p>
+            <p class="ml-3 mb-6 is-size-4 has-text-justified"> Outside of the classroom; I'm a brother, an uncle the coolest toddler, a
+                friend, and a cat dad to two chaotic kitties. In my spare time I like to go camping, play video games, go to concerts, and
+                volunteer in the local community.
+
+            </p>
+            <p class="m-3 is-size-4 has-text-centered">
+                I can be found on <a href="https://www.linkedin.com/in/asherpappas/"
+                    class="has-text-grey-light">LinkedIn</a> and <a href="https://github.com/AsherPappas"
+                    class="has-text-grey-light">GitHub</a>.
+                Please email me at ashpap.codes@gmail.com or use my <a href="contact.html"
+                    class="has-text-grey-light">contact </a>page to reach out with any
+                questions regarding my portfolio.
+            </p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
